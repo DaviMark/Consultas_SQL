@@ -12,7 +12,7 @@ O repositório está organizado da seguinte forma:
 │   ├── Info_Torre.sql       # Consultas para buscar informação dos veiculos em tempo real.
 │   ├── Km_Rodado.sql          # Queries para calcular o Km rodado real por veiculo.
 │   ├── dist_valor.sql          # Consultas para geração de relatórios.
-|   ├── controle_jornada.sql          # Consultas para gerar relatório personalizado para controle de jornada de colaboradores.
+|   ├── controle_jornada.sql     # Consultas para gerar relatório personalizado para controle de jornada de colaboradores.
 │   
 └── README.md                   # Documentação do repositório
 ```
