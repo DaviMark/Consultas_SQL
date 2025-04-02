@@ -13,6 +13,7 @@ O repositório está organizado da seguinte forma:
 │   ├── Km_Rodado.sql          # Queries para calcular o Km rodado real por veiculo.
 │   ├── dist_valor.sql          # Consultas para geração de relatórios.
 |   ├── controle_jornada.sql     # Consultas para gerar relatório personalizado para controle de jornada de colaboradores.
+|   ├── orcamento_email.sql     # Consultas para coletar os dados e enviar o email apartir de um script em JavaScript ou Python.
 │   
 └── README.md                   # Documentação do repositório
 ```
