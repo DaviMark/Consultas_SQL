@@ -1,6 +1,6 @@
 # 📌 Repositório de Consultas SQL
 
-💾 Bem-vindo ao repositório de consultas SQL! 🎯 Aqui você encontrará uma coleção de queries otimizadas para análise de dados, geração de relatórios e manipulação eficiente de bancos de dados. Se você trabalha com SQL para monitoramento de veículos, cálculos de desempenho ou extração de insights, este repositório pode ser um ótimo ponto de partida.
+💾 Bem-vindo ao repositório de consultas SQL! 🎯 Aqui você encontrará uma coleção de queries otimizadas para análise de dados, geração de relatórios e manipulação eficiente de bancos de dados. Se você trabalha com SQL para monitoramento, cálculos de desempenho ou extração de insights, este repositório pode ser um ótimo ponto de partida.
 
 ## 📂 Estrutura do Repositório
 
