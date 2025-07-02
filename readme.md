@@ -19,6 +19,9 @@ O repositório está organizado da seguinte forma:
 |   ├── gestao_ocorrencias.sql     # Consulta para buscar as ocorrencias de cada viagem realizada.
 |   ├── gestao_contratos.sql     # Consulta identificar cada contrato e suas informaçoes para analise no painel.
 |   ├── control_licencas.sql     # Querie realizada no BigQuery para buscar informaçoes de cada licença SAP, das que foram contratadas e as que estão sendo utilizadas.
+|   ├── contratos_ativos.sql     # Consultando tabela do BQ para buscar os contratos ativos, e relacionando a uma tabela extraida do Sharepoint para retornar dados necessarios.
+|   ├── receita_analitica.sql     # Buscando dados das tabelas do BQ para atualizar nova tabela na camada datamart, e disponibilizar o consumo para visualizar no pbi.
+|   ├── extracao_pontual.sql     # Extração pontual com alguns dados do receita_analitica, mas com alguns detalhes e otimizando a consulta por causa do alto consumo.
 │   
 └── README.md                   # Documentação do repositório
 ```
