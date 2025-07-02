@@ -1,3 +1,4 @@
+  -- Consulta otimizada de 200GB para 33GB
 WITH 
 UOLB_UOLC AS (
 SELECT
@@ -13,7 +14,7 @@ SELECT
   FIN01._BIC_CA_OFERTA, 
   FIN01.MATERIAL, 
   FIN01.PROFIT_CTR, 
-FROM uolcs-datalake-engcorp-prd.`ecc_fi_sapphm_raw.OFIN01` FIN01
+FROM `project.dataset.table.OFIN01` FIN01
 WHERE EXTRACT(YEAR FROM PSTNG_DATE) = 2024
 )
 , REC AS (
@@ -70,13 +71,13 @@ SELECT
   off.txtlg as DESCRICAO_OFERTA,
   SUM(TOTAL_SALDO * -1) AS SALDO
 FROM STAR_JOIN AS REC
-LEFT JOIN uolcs-datalake-engcorp-prd.`ecc_fi_sapphm_raw._BIC_AOPRO0100` AS OP
+LEFT JOIN `project.dataset.table._BIC_AOPRO0100` AS OP
 ON REC.MATERIAL = OP.MATERIAL
 LEFT JOIN uolcs-datalake-engcorp-prd.`ecc_financeiro_gl_report.CV_DM_ACCOUNT` AS CONT
 ON REC.ACCOUNT = CONT.ACCOUNT_ACC
-LEFT JOIN uolcs-datalake-engcorp-prd.`ecc_fi_sapphm_raw._BIC_TCA_OFERTA` AS OFF
+LEFT JOIN `project.dataset.table._BIC_TCA_OFERTA` AS OFF
 ON REC._BIC_CA_OFERTA = OFF._BIC_CA_OFERTA
-LEFT JOIN uolcs-datalake-engcorp-prd.`ecc_fi_sapphm_raw._BI0_TPROFIT_CTR` AS CL
+LEFT JOIN `project.dataset.table._BI0_TPROFIT_CTR` AS CL
 ON REC.PROFIT_CTR = CL.PROFIT_CTR AND CL.DATETO ='9999-12-31'
 WHERE COMP_CODE = 'UOLB'
 AND REC.ACCOUNT >= '0040000000' AND REC.ACCOUNT <= '0049999999'
@@ -95,4 +96,4 @@ GROUP BY COMP_CODE,
   OFF.txtlg,
   ID_INSCRIPTION
 
-  -- Com consumo menor de 33GB
+
