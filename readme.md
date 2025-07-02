@@ -1,10 +1,16 @@
 # 📌 Repositório de Consultas SQL
 
-💾 Bem-vindo ao repositório de consultas SQL! 🎯 Aqui você encontrará uma coleção de queries otimizadas para análise de dados, geração de relatórios e manipulação eficiente de bancos de dados. Se você trabalha com SQL para monitoramento, cálculos de desempenho ou extração de insights, este repositório pode ser um ótimo ponto de partida.
+🚀 Bem-vindo ao repositório de consultas SQL!  
+Aqui você encontrará uma coleção de **queries otimizadas**, voltadas para **análises de dados**, **automação de relatórios** e **manipulação eficiente de bases relacionais**, aplicadas a diferentes contextos de negócio.
+
+Se você trabalha com dados e precisa de soluções rápidas e reutilizáveis em SQL, este repositório foi feito para você.
+
+---
 
 ## 📂 Estrutura do Repositório
 
-O repositório está organizado da seguinte forma:
+O repositório está organizado por funcionalidades e casos de uso:
+
 
 ```
 /
@@ -26,11 +32,35 @@ O repositório está organizado da seguinte forma:
 └── README.md                   # Documentação do repositório
 ```
 
+---
+
+# ⚠️ Observação de Segurança
+
+As queries aqui presentes são exemplos técnicos e **não contêm dados sensíveis ou reais**.  
+Todos os nomes de projetos, datasets e tabelas foram **anônimos ou modificados** para preservar a confidencialidade e respeitar diretrizes corporativas.
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
+- **BigQuery (Google Cloud)**
 - **SQL Server**
 - **MySQL**
 - **PostgreSQL**
 - **Oracle SQL**
 - **SQLite**
+
+---
+
+## 📈 Objetivo
+
+Este repositório tem como finalidade:
+
+- Centralizar consultas reutilizáveis em diferentes projetos
+- Documentar lógicas complexas aplicadas em ambientes reais
+- Servir de inspiração ou base para automações e dashboards
+- Compartilhar conhecimento técnico com a comunidade
+
+
+
 
